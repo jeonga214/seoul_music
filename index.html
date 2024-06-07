@@ -1,0 +1,486 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"> <!--뷰포트설정-->
+<title>2023 SEOUL MUSIC FESTIVAL</title>
+
+
+<link rel="stylesheet" type="text/css" href="css/reset.css"> <!--문서초기화 css-->
+<link rel="stylesheet" type="text/css" href="css/style.css"> <!--디자인 css-->
+
+<link rel="icon" type="image/png" href="./img/favicon/faviconV2.png" />
+<link rel="apple-touch-icon-precomposed" href="img/favicon/faviconV2.png"> 
+<!--아이폰이,아이패드에서 웹페이지를 바탕 화면에 링크설정-->
+
+
+<!-- Link Swiper's CSS 메인-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<!-- Swiper JS 메인 -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/swiper.js" defer></script>
+
+
+<script src="js/jquery-1.9.1.min.js"></script> <!--제이쿼리 라이브러리 링크-->
+
+<!--(1) 파일 링크-->
+<link rel="stylesheet" href="js/jquery.bxslider.css"> <!--bx슬라이더 CSS 연결-->
+<script src="js/jquery.bxslider.js"></script><!--제이쿼리 bx슬라이더 파일 연결-->
+<script src="js/header.js" defer></script>
+
+
+<!-- AOS 라이브러리 불러오기-->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script> 
+  
+<!--(3) 제이쿼리 입력-->  
+  <script>
+    $(document).ready(function(){
+      $('.slider').bxSlider({
+        auto: true,   //자동실행
+        speed : 1000,
+      });
+    });
+  </script>
+
+<!--제이쿼리로 모바일 버전에서 전체메뉴 아이콘 토글기능 설정 -->
+<!-- <script type="text/javascript">
+$(document).ready(function() {
+	$(".menu-toggle-btn").click(function(){
+		$(".gnb").stop().slideToggle("fast");
+	});
+});
+</script> -->
+
+</head>
+
+<body>	
+    <script> 
+        AOS.init(); 
+    </script>
+
+    <div id="wrap">
+
+        <div id="header_wrap">
+            <header id="header">
+                <h1 class="logo">
+                    <a href="index.html">
+                        <picture>
+                            <source srcset="./img/main_images/logo_w.svg" media="(max-width:820px)">
+                            <source srcset="./img/main_images/logo_w.svg" media="(max-width:1024px)">
+                            <img src="./img/main_images/logo_w.svg" alt="서울뮤직페스티벌"/>
+                        </picture>
+                    </a>
+                </h1>
+                <nav>
+                    <ul class="gnb">
+                        <li>
+                            <a href="sub01.html">SMUF 소개</a>
+                            <!-- <ul class="menu_bar">
+                                <li><a href="#">행사개요</a></li>
+                                <li><a href="#">일정표</a></li>
+                                <li><a href="#">오시는 길</a></li>
+                            </ul> -->
+                        </li>
+                        <li>
+                            <a href="sub02.html">라인업</a>
+                            <!-- <ul class="menu_bar">
+                                <li><a href="#">MAIN STAGE</a></li>
+                                <li><a href="#">SUB STAGE</a></li>
+                                <li><a href="#">SMUF 버스킹</a></li>
+                                <li><a href="#">SING4U</a></li>
+                            </ul> -->
+                        </li>
+                        <li>
+                            <a href="sub03.html">프로그램</a>
+                            <!-- <ul class="menu_bar">
+                                <li><a href="#">MAIN STAGE</a></li>
+                                <li><a href="#">SUB STAGE</a></li>
+                                <li><a href="#">빵카로드 IN SEOUL</a></li>
+                                <li><a href="#">체험 프로그램</a></li>
+                            </ul> -->
+                        </li>
+                        <li>
+                            <a href="sub04.html">갤러리</a>
+                            <!-- <ul class="menu_bar">
+                                <li><a href="#">SMUF 2023</a></li>
+                                <li><a href="#">SMUF 2022</a></li>
+                                <li><a href="#">SMUF 2019</a></li>
+                            </ul> -->
+                        </li> 
+                    </ul>
+                </nav>
+
+                <!--모바일 gnb 토글버튼메뉴-->
+                <span class="menu-toggle-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+
+                <div id="toggle_full">
+                    <ul>
+                        <li><a href="sub01.html">SMUF 소개</a></li>
+                        <li><a href="sub02.html">라인업</a></li>
+                        <li><a href="sub03.html">프로그램</a></li>
+                        <li><a href="sub04.html">갤러리</a></li>
+                    </ul>
+                </div>
+            </header><!--//header-->
+        </div><!--헤더 100% 너비에 배경색 추가하기-->    
+            
+
+        <div id="visual">
+            <div id="visual_back_wrap">
+                <div id="visual_1">
+                    <div class="visual_main">
+                        <div class="main_txt">
+                            <div class="main_img_wrap">
+                                <div></div><!--동그라미-->
+                                <div></div>
+                                <img src="./img/main_images/vi_logo.png" alt="">
+                            </div>
+                            <p>2023 Seoul Music Festival</p>
+                        </div>
+                        <!-- <div>스크롤</div> -->
+                    </div>
+                </div>
+                <div id="visual_2">
+                    <div class="imges_wrap_wrap">
+                        <div class="imges_wrap">
+                            <img class="img1" src="./img/main_images/01.png" alt="풀">
+                            <img class="img2" src="./img/main_images/bridge.png" alt="울타리">
+                            <img class="img3" src="./img/main_images/cloud_left.png" alt="구름_왼">
+                            <img class="img4" src="./img/main_images/cloud_right.png" alt="구름_오">
+                            <img class="img5" src="./img/main_images/center.png" alt="스테이지">
+                            <img class="img6" src="./img/main_images/red_car.png" alt="빨간차">
+                            <img class="img7" src="./img/main_images/cosmetic.png" alt="갈색푸드트럭">
+                            <img class="img8" src="./img/main_images/dance3.png" alt="스테이지앞춤">
+                            <img class="img9" src="./img/main_images/talk1.png" alt="빨간차앞토크">
+                            <img class="img10" src="./img/main_images/hug2.png" alt="안고있는사람">
+                            <img class="img11" src="./img/main_images/talk2.png" alt="제일밑토크">
+                            <img class="img12" src="./img/main_images/leaf_left.png" alt="왼쪽풀">
+                            <img class="img13" src="./img/main_images/leaf_right.png" alt="오른쪽풀">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 축제정보 -->
+        <section id="section1">
+            <div class="content_1" data-aos="fade-up" data-aos-duration="1000">
+                <div class="fes_txt_wrap1">
+                    <div class="fes_txt">
+                        <div class="fes_txt_top">
+                            축제 정보
+                            <p>FESTIVAL</p>
+                            <img src="./img/main_images/s1_text.png" alt="">
+                        </div>
+                        <div class="fes_txt_bottom">
+                            대중음악으로 하나되어 모두가 함께 즐기는<br>
+                            서울의 대표 문화예술축제로 한걸음 더 다가갈 3일간의 여정에 <br>
+                            여러분을 초대합니다.
+                        </div>
+                    </div> <!--이거 복사해서 쓰기-->
+                    <div class="fes_view">
+                        <a href="sub01.html"><p>VIEW MORE</p></a>
+                    </div>
+                </div>
+                <div class="fes_txt_wrap2">
+                    <div class="fes_right_wrap">
+                        <div>
+                            <div class="con_con_left">
+                                <span>행</span>
+                                <span>사</span>
+                                <span>명</span>
+                            </div>
+                            <div class="con_con_right">2023 서울뮤직페스티벌</div>
+                        </div>
+
+                        <div>
+                            <div class="con_con_left">
+                                <span>기</span>
+                                <span>간</span>
+                            </div>
+                            <div class="con_con_right">2023. 9. 22.(금) ~ 9. 24.(일) / 3일간</div>
+                        </div>
+
+                        <div>
+                            <div class="con_con_left">
+                                <span>장</span>
+                                <span>소</span>
+                            </div>
+                            <div class="con_con_right">노들섬 잔디마당, 노들스퀘어, 라이브하우스</div>
+                        </div>
+
+                        <div>
+                            <div class="con_con_left">
+                                <span>주</span>
+                                <span>최</span>
+                            </div>
+                            <div class="con_con_right"><img src="./img/main_images/seoul_logo.png" alt="서울로고"></div>
+                        </div>
+
+                        <div>
+                            <div class="con_con_left">
+                                <span>프</span>
+                                <span>로</span>
+                                <span>그</span>
+                                <span>램</span>
+                            </div>
+                            <div class="con_con_right">메인스테이지, 서브스테이지, 체험 프로그램 등</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="back_1">
+                <img src="./img/main_images/s1Obj01.png" alt="">
+            </div>
+        </section>
+
+        <!-- 프로그램 정보 -->
+        <section id="section2">
+            <div class="back_3">
+                <img src="./img/main_images/s2Obj02.png" alt="왼">
+            </div>
+            <div class="back_4">
+                <img src="./img/main_images/s2Obj01.png" alt="오">
+            </div>
+            <div class="program" data-aos="fade-up" data-aos-duration="1000">
+                <div class="fes_txt2">
+                    <div class="fes_txt_top2">
+                        프로그램 정보
+                        <p>PROGRAM</p>
+                        <img src="./img/main_images/s2Text.png" alt="">
+                    </div>
+                </div>
+
+                <div class="program_swiper_wrap">
+                    <div class="program_swiper">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="sub03.html">
+                                    <div class="poster_name">
+                                        <h2 class="h2_1">MAIN<br>STAGE</h2>
+                                        <h3 class="h3_1">메인<br>스테이지</h3>
+                                    </div>
+                                    <div class="poster_logo">
+                                        <img src="./img/main_images/s2_poster1_logo.png" alt="">
+                                    </div>
+                                    <img src="./img/main_images/s2_poster1.png" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="sub03.html">
+                                    <div class="poster_name">
+                                        <h2 class="h2_2">SUB<br>STAGE</h2>
+                                        <h3 class="h3_2">서브<br>스테이지</h3>
+                                    </div>
+                                    <div class="poster_logo">
+                                        <img src="./img/main_images/s2_poster2_logo.png" alt="">
+                                    </div>
+                                    <img src="./img/main_images/s2_poster2.png" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="sub03.html">
+                                    <div class="poster_name">
+                                        <h2 class="h2_3">SIDE<br>EVENTS</h2>
+                                        <h3 class="h3_3">체험<br>프로그램</h3>
+                                    </div>
+                                    <div class="poster_logo">
+                                        <img src="./img/main_images/s2_poster3_logo.png" alt="">
+                                    </div>
+                                    <img src="./img/main_images/s2_poster3.png" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="sub03.html">
+                                    <div class="poster_name">
+                                        <h2 class="h2_4">The sweet<br>road in<br>SEOUL</h2>
+                                        <h3 class="h3_4">빵카로드<br>IN SEOUL</h3>
+                                    </div>
+                                    <div class="poster_logo">
+                                        <img src="./img/main_images/s2_poster4_logo.png" alt="">
+                                    </div>
+                                    <img src="./img/main_images/s2_poster4.png" alt="">
+                                </a>
+                            </div>
+                            </div>
+                        </div><!--//slider-->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 흐르는 글씨 -->
+        <section id="section3">
+            <div class="track">
+                <div class="track_content">
+                    &nbsp;
+                    <div class="fill_seoul">
+                        <div>2023 SEOUL MUSIC FESTIVAL</div>
+                        <img src="./img/main_images/wave_arr.png" alt="">
+                    </div>
+                    &nbsp;
+                    <div class="blank_seoul">
+                        <div>2023 SEOUL MUSIC FESTIVAL</div>
+                        <img src="./img/main_images/wave_arr.png" alt="">
+                    </div>
+                    &nbsp;
+                    <div class="fill_seoul">
+                        <div>2023 SEOUL MUSIC FESTIVAL</div>
+                        <img src="./img/main_images/wave_arr.png" alt="">
+                    </div>
+                    &nbsp;
+                    <div class="blank_seoul">
+                        <div>2023 SEOUL MUSIC FESTIVAL</div>
+                        <img src="./img/main_images/wave_arr.png" alt="">
+                    </div>
+                    &nbsp;
+                    <div class="fill_seoul">
+                        <div>2023 SEOUL MUSIC FESTIVAL</div>
+                        <img src="./img/main_images/wave_arr.png" alt="">
+                    </div>
+                    &nbsp;
+                    <div class="blank_seoul">
+                        <div>2023 SEOUL MUSIC FESTIVAL</div>
+                        <img src="./img/main_images/wave_arr.png" alt="">
+                    </div>
+                    &nbsp;
+                    <div class="fill_seoul">
+                        <div>2023 SEOUL MUSIC FESTIVAL</div>
+                        <img src="./img/main_images/wave_arr.png" alt="">
+                    </div>
+                    &nbsp;
+                    <div class="blank_seoul">
+                        <div>2023 SEOUL MUSIC FESTIVAL</div>
+                        <img src="./img/main_images/wave_arr.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 축제 커뮤니티 -->
+        <section id="section4">
+            <div class="content_3" data-aos="fade-up" data-aos-duration="1000">
+                <div class="com_txt_wrap">
+                    <div class="com_txt">
+                        <div class="com_txt_top">
+                            축제 커뮤니티
+                            <p>FESTIVAL</p>
+                            <img src="./img/main_images/s3_text.png" alt="">
+                        </div>
+                    </div> <!--이거 복사해서 쓰기-->
+                    <div class="com_view">
+                        <a href="#"><p>VIEW MORE</p></a>
+                    </div>
+                </div>
+
+                <ul class="com_right_wrap">
+                    <li>
+                        <a href="#">
+                            2023 서울뮤직페스티벌 입장 및 관람안내
+                            <span>2023.09</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            2023 서울뮤직페스티벌 티켓 예매 안내
+                            <span>2023.09</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            2022 서울뮤직페스티벌 입장 안내
+                            <span>2022.09</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            2022 서울뮤직페스티벌 티켓 예매 안내
+                            <span>2022.09</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="back_2">
+                <img src="./img/main_images/s3Obj01.png" alt="">
+            </div>
+            <!-- <div class="back_1">그림</div> -->
+        </section>
+
+        <!-- 축제 갤러리 -->
+        <section id="section5">
+            <div class="content_1" data-aos="fade-up" data-aos-duration="1000">
+                <div class="fes_txt_wrap1">
+                    <div class="fes_txt">
+                        <div class="fes_txt_top">
+                            축제 갤러리
+                            <p>FESTIVAL</p>
+                            <div class="gallery">GALLERY</div>
+                        </div>
+                    </div> <!--이거 복사해서 쓰기-->
+                </div>
+                
+                <div class="gallery_bottom">
+                    <div class="swiper mySwiper2">
+                        <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="sub04.html">
+                                <img src="./img/main_images/2023090513062916938867894523.png" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="sub04.html">
+                                <img src="./img/main_images/2023090513063716938867978547.png" alt="">
+                            </a>
+                        </div>
+                        <!-- <div class="swiper-slide"></div> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main_final">CLICK AND DRAG FOR MORE</div>
+
+            </div>
+            <!-- <div class="back_1">그림</div> -->
+        </section>
+        
+        <footer id="footer">
+            <div class="footer_wrap">
+                <div class="footer_1">
+                    <div>
+                        <a href="#"><img src="./img/main_images/logo_w.svg" alt="로고"></a>
+                    </div>
+                    <div>
+                        <div>E-mail</div>
+                        <p>SEOULMUSICFESTIVAL@GMAIL.COM</p>
+                    </div>
+                </div>
+
+                <div class="footer_2">
+                    <div>
+                        <img src="./img/main_images/seoul.png" alt="서울특별시로고">
+                    </div>
+                    <div>
+                        <a href="https://www.facebook.com/seoulmusicfestival" target="_blank"><img src="./img/main_images/fb.png" alt="페이스북"></a>
+                        <a href="https://www.instagram.com/seoulmusicfesta/" target="_blank"><img src="./img/main_images/instar.png" alt="인스타"></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer_3">
+                <p class="copyright">Copyright 2024 신구대학교  미디어콘텐츠과 A반 2021122022 박정아</p>
+                <p class="copyright"></p>
+            </div>
+
+        </footer><!--//footer-->
+    </div><!--//wrap-->
+</body>
+</html>

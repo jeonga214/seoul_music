@@ -1,0 +1,378 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"> <!--뷰포트설정-->
+<title>2023 SEOUL MUSIC FESTIVAL</title>
+
+
+<link rel="stylesheet" type="text/css" href="css/reset.css"> <!--문서초기화 css-->
+<link rel="stylesheet" type="text/css" href="css/style.css"> <!--디자인 css-->
+
+<link rel="icon" type="image/png" href="./img/favicon/faviconV2.png" />
+<link rel="apple-touch-icon-precomposed" href="img/favicon/indigo-touch-icon.png"> 
+<!--아이폰이,아이패드에서 웹페이지를 바탕 화면에 링크설정-->
+
+
+<script src="js/jquery-1.9.1.min.js"></script> <!--제이쿼리 라이브러리 링크-->
+
+<!--(1) 파일 링크-->
+<link rel="stylesheet" href="js/jquery.bxslider.css"> <!--bx슬라이더 CSS 연결-->
+<script src="js/jquery.bxslider.js"></script><!--제이쿼리 bx슬라이더 파일 연결-->
+<script src="js/tab_nav.js"></script>
+<script src="js/header.js" defer></script>
+
+<!-- AOS 라이브러리 불러오기-->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script> 
+  
+<!--(3) 제이쿼리 입력-->  
+  <script>
+    $(document).ready(function(){
+      $('.slider').bxSlider({
+        auto: true,   //자동실행
+        speed : 2000,
+      });
+    });
+  </script>
+
+
+
+
+<!--제이쿼리로 모바일 버전에서 전체메뉴 아이콘 토글기능 설정 -->
+<!-- <script type="text/javascript">
+$(document).ready(function() {
+	$(".menu-toggle-btn").click(function(){
+		$(".gnb").stop().slideToggle("fast");
+	});
+});
+</script> -->
+
+</head>
+
+<body>
+    <script> 
+        AOS.init(); 
+    </script>
+
+    <div id="wrap">
+        <div id="header_wrap">
+            <header id="header">
+                <h1 class="logo">
+                    <a href="index.html">
+                        <picture>
+                            <source srcset="./img/main_images/logo_w.svg" media="(max-width:820px)">
+                            <source srcset="./img/main_images/logo_w.svg" media="(max-width:1024px)">
+                            <img src="./img/main_images/logo_w.svg" alt="서울뮤직페스티벌"/>
+                        </picture>
+                    </a>
+                </h1>
+                <nav>
+                    <ul class="gnb">
+                        <li>
+                            <a href="sub01.html">SMUF 소개</a>
+                            <!-- <ul class="menu_bar">
+                                <li><a href="#">행사개요</a></li>
+                                <li><a href="#">일정표</a></li>
+                                <li><a href="#">오시는 길</a></li>
+                            </ul> -->
+                        </li>
+                        <li>
+                            <a href="sub02.html">라인업</a>
+                            <!-- <ul class="menu_bar">
+                                <li><a href="#">MAIN STAGE</a></li>
+                                <li><a href="#">SUB STAGE</a></li>
+                                <li><a href="#">SMUF 버스킹</a></li>
+                                <li><a href="#">SING4U</a></li>
+                            </ul> -->
+                        </li>
+                        <li>
+                            <a href="sub03.html">프로그램</a>
+                            <!-- <ul class="menu_bar">
+                                <li><a href="#">MAIN STAGE</a></li>
+                                <li><a href="#">SUB STAGE</a></li>
+                                <li><a href="#">빵카로드 IN SEOUL</a></li>
+                                <li><a href="#">체험 프로그램</a></li>
+                            </ul> -->
+                        </li>
+                        <li>
+                            <a href="sub04.html">갤러리</a>
+                            <!-- <ul class="menu_bar">
+                                <li><a href="#">SMUF 2023</a></li>
+                                <li><a href="#">SMUF 2022</a></li>
+                                <li><a href="#">SMUF 2019</a></li>
+                            </ul> -->
+                        </li> 
+                    </ul>
+                </nav>
+
+                <!--모바일 gnb 토글버튼메뉴-->
+                <span class="menu-toggle-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+
+                <div id="toggle_full">
+                    <ul>
+                        <li><a href="sub01.html">SMUF 소개</a></li>
+                        <li><a href="sub02.html">라인업</a></li>
+                        <li><a href="sub03.html">프로그램</a></li>
+                        <li><a href="sub04.html">갤러리</a></li>
+                    </ul>
+                </div>
+            </header><!--//header-->
+        </div><!--헤더 100% 너비에 배경색 추가하기-->            
+        
+        <div id="visual_sub02">
+            <div class="visual_titlewrap02">
+                <h1 data-aos="fade-up" data-aos-duration="1000">라인업</h1>
+                <div class="visual_subtitle02">
+                    <div><img src="./img/sub2_images/mainstage_text.png" alt="main_stage" data-aos="fade-up" data-aos-duration="1300"></div>
+                    <p data-aos="fade-up" data-aos-duration="1400">메인스테이지</p>
+                </div>
+            </div>
+        </div><!--//slider-->
+        
+
+
+        <!--서브페이지에 들어갈 콘텐츠(내용)의 영역-->
+        <div id="contents_subarea02">
+            <div class="story_con">
+                <div class="intro_top" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="sub02_logo">
+                        <img src="./img/sub2_images/lineup.png" alt="sub02_logo">
+                        <div>MAIN STAGE</div>
+                    </div>
+                    <div class="sub_nav">
+                        <ul>
+                            <li>FRI<span>9.22</span></li>
+                            <li>SAT<span>9.23</span></li>
+                            <li>SUN<span>9.24</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="intro">
+        
+                    <div class="intro_content">
+                        <div class="intro1">
+
+                            <div class="sub02_lineup_wrap" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="sub02_image">
+                                    <img src="./img/sub2_images/mainstage_fri05.png" alt="정인">
+                                </div>
+                                <div class="sub02_image_title">
+                                    <h2>정인</h2>
+                                    <div>Jung in</div>
+                                </div>
+                            </div>
+
+                            <div class="sub02_lineup_wrap" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="sub02_image">
+                                    <img src="./img/sub2_images/mainstage_fri03.png" alt="넉살,까데호">
+                                </div>
+                                <div class="sub02_image_title">
+                                    <h2>넉살 X 까데호</h2>
+                                    <div>Nucksal X CADEJO</div>
+                                </div>
+                            </div>
+
+                            <div class="sub02_lineup_wrap" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="sub02_image">
+                                    <img src="./img/sub2_images/mainstage_fri01.png" alt="가호,케이브">
+                                </div>
+                                <div class="sub02_image_title">
+                                    <h2>가호 X 케이브</h2>
+                                    <div>GAHO X KAVE</div>
+                                </div>
+                            </div>
+
+                            <div class="sub02_lineup_wrap" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="sub02_image">
+                                    <img src="./img/sub2_images/mainstage_fri02.png" alt="너드커넥션">
+                                </div>
+                                <div class="sub02_image_title">
+                                    <h2>너드커넥션</h2>
+                                    <div>Nerd Connection</div>
+                                </div>
+                            </div>
+
+                            <div class="sub02_lineup_wrap" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="sub02_image">
+                                    <img src="./img/sub2_images/mainstage_fri04.png" alt="원슈타인">
+                                </div>
+                                <div class="sub02_image_title">
+                                    <h2>원슈타인</h2>
+                                    <div>Wonstein</div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+        
+                    <div class="intro_content">
+                        <div class="intro1">
+
+                            <div class="sub02_lineup_wrap" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="sub02_image">
+                                    <img src="./img/sub2_images/mainstage_sat03.png" alt="이민우">
+                                </div>
+                                <div class="sub02_image_title">
+                                    <h2>이민우(M)</h2>
+                                    <div>Lee Min Woo(M)</div>
+                                </div>
+                            </div>
+
+                            <div class="sub02_lineup_wrap" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="sub02_image">
+                                    <img src="./img/sub2_images/mainstage_sat05.png" alt="틴탑">
+                                </div>
+                                <div class="sub02_image_title">
+                                    <h2>틴탑</h2>
+                                    <div>TEEN TOP</div>
+                                </div>
+                            </div>
+
+                            <div class="sub02_lineup_wrap" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="sub02_image">
+                                    <img src="./img/sub2_images/mainstage_sat01.png" alt="BAE173">
+                                </div>
+                                <div class="sub02_image_title">
+                                    <h2>BAE173</h2>
+                                </div>
+                            </div>
+
+                            <div class="sub02_lineup_wrap" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="sub02_image">
+                                    <img src="./img/sub2_images/mainstage_sat02.png" alt="TAN">
+                                </div>
+                                <div class="sub02_image_title">
+                                    <h2>TAN</h2>
+                                </div>
+                            </div>
+
+                            <div class="sub02_lineup_wrap" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="sub02_image">
+                                    <img src="./img/sub2_images/mainstage_sat04.png" alt="클라씨">
+                                </div>
+                                <div class="sub02_image_title">
+                                    <h2>클라씨</h2>
+                                    <div>CLASS:y</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+        
+                    <div class="intro_content">
+                        <div class="intro1">
+
+                            <div class="sub02_lineup_wrap" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="sub02_image">
+                                    <img src="./img/sub2_images/mainstage_sun04.png" alt="코요태">
+                                </div>
+                                <div class="sub02_image_title">
+                                    <h2>코요태</h2>
+                                    <div>Koyote</div>
+                                </div>
+                            </div>
+
+                            <div class="sub02_lineup_wrap" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="sub02_image">
+                                    <img src="./img/sub2_images/mainstage_sun03.png" alt="알리">
+                                </div>
+                                <div class="sub02_image_title">
+                                    <h2>알리</h2>
+                                    <div>ALi</div>
+                                </div>
+                            </div>
+
+                            <div class="sub02_lineup_wrap" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="sub02_image">
+                                    <img src="./img/sub2_images/mainstage_sun02.png" alt="송가인">
+                                </div>
+                                <div class="sub02_image_title">
+                                    <h2>송가인</h2>
+                                    <div>Song Ga In</div>
+                                </div>
+                            </div>
+
+                            <div class="sub02_lineup_wrap" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="sub02_image">
+                                    <img src="./img/sub2_images/mainstage_sun05.png" alt="폴킴">
+                                </div>
+                                <div class="sub02_image_title">
+                                    <h2>폴킴</h2>
+                                    <div>Paul Kim</div>
+                                </div>
+                            </div>
+
+                            <div class="sub02_lineup_wrap" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="sub02_image">
+                                    <img src="./img/sub2_images/mainstage_sun01.png" alt="경서">
+                                </div>
+                                <div class="sub02_image_title">
+                                    <h2>경서</h2>
+                                    <div>Kyoung Seo</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+            <div class="sub02_img">
+                <img src="./img/sub2_images/bottom_grass.png" alt="풀">
+            </div>
+        <div id="container">
+                
+        <!-- 내가 디자인한 콘텐츠를 넣는 공간 시작-->    
+        
+        
+        
+        
+        
+        
+        <!-- 내가 디자인한 콘텐츠를 넣는 공간 끝--> 
+        
+        </div><!--//container-->
+        </div><!--//contents_subarea-->
+        
+        
+        
+        
+    <footer id="footer">
+        <div class="footer_wrap">
+            <div class="footer_1">
+                <div>
+                    <a href="#"><img src="./img/main_images/logo_w.svg" alt="로고"></a>
+                </div>
+                <div>
+                    <div>E-mail</div>
+                    <p>SEOULMUSICFESTIVAL@GMAIL.COM</p>
+                </div>
+            </div>
+
+            <div class="footer_2">
+                <div>
+                    <img src="./img/main_images/seoul.png" alt="서울특별시로고">
+                </div>
+                <div>
+                    <a href="#"><img src="./img/main_images/fb.png" alt="페이스북"></a>
+                    <a href="#"><img src="./img/main_images/instar.png" alt="인스타"></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer_3">
+            <p class="copyright">Copyright 2024 신구대학교  미디어콘텐츠과 A반 2021122022 박정아 </p>
+            <p class="copyright">ⓒ adidas Korea, LLC. All Rights Reserved</p>
+        </div>
+
+    </footer><!--//footer-->
+    </div><!--//wrap-->
+
+</body>
+</html>

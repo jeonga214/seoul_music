@@ -1,0 +1,535 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"> <!--뷰포트설정-->
+<title>2023 SEOUL MUSIC FESTIVAL</title>
+
+
+<link rel="stylesheet" type="text/css" href="css/reset.css"> <!--문서초기화 css-->
+<link rel="stylesheet" type="text/css" href="css/style.css"> <!--디자인 css-->
+
+<link rel="icon" type="image/png" href="./img/favicon/faviconV2.png" />
+<link rel="apple-touch-icon-precomposed" href="img/favicon/indigo-touch-icon.png"> 
+<!--아이폰이,아이패드에서 웹페이지를 바탕 화면에 링크설정-->
+
+
+<script src="js/jquery-1.9.1.min.js"></script> <!--제이쿼리 라이브러리 링크-->
+
+<!--(1) 파일 링크-->
+<link rel="stylesheet" href="js/jquery.bxslider.css"> <!--bx슬라이더 CSS 연결-->
+<script src="js/jquery.bxslider.js"></script><!--제이쿼리 bx슬라이더 파일 연결-->
+<script src="js/tab_nav.js"></script>
+<script src="js/header.js" defer></script>
+
+<!-- AOS 라이브러리 불러오기-->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script> 
+  
+<!--(3) 제이쿼리 입력-->  
+  <!-- <script>
+    $(document).ready(function(){
+      $('.slider').bxSlider({
+        auto: true,   //자동실행
+        speed : 2000,
+      });
+    });
+  </script> -->
+
+
+
+
+<!--제이쿼리로 모바일 버전에서 전체메뉴 아이콘 토글기능 설정 -->
+<!-- <script type="text/javascript">
+$(document).ready(function() {
+	$(".menu-toggle-btn").click(function(){
+		$(".gnb").stop().slideToggle("fast");
+	});
+});
+</script> -->
+
+</head>
+
+<body>
+
+    <script> 
+        AOS.init(); 
+    </script>
+
+    <div id="wrap">
+        <div id="header_wrap">
+            <header id="header">
+                <h1 class="logo">
+                    <a href="index.html">
+                        <picture>
+                            <source srcset="./img/main_images/logo_w.svg" media="(max-width:820px)">
+                            <source srcset="./img/main_images/logo_w.svg" media="(max-width:1024px)">
+                            <img src="./img/main_images/logo_w.svg" alt="서울뮤직페스티벌"/>
+                        </picture>
+                    </a>
+                </h1>
+                <nav>
+                    <ul class="gnb">
+                        <li>
+                            <a href="sub01.html">SMUF 소개</a>
+                            <!-- <ul class="menu_bar">
+                                <li><a href="#">행사개요</a></li>
+                                <li><a href="#">일정표</a></li>
+                                <li><a href="#">오시는 길</a></li>
+                            </ul> -->
+                        </li>
+                        <li>
+                            <a href="sub02.html">라인업</a>
+                            <!-- <ul class="menu_bar">
+                                <li><a href="#">MAIN STAGE</a></li>
+                                <li><a href="#">SUB STAGE</a></li>
+                                <li><a href="#">SMUF 버스킹</a></li>
+                                <li><a href="#">SING4U</a></li>
+                            </ul> -->
+                        </li>
+                        <li>
+                            <a href="sub03.html">프로그램</a>
+                            <!-- <ul class="menu_bar">
+                                <li><a href="#">MAIN STAGE</a></li>
+                                <li><a href="#">SUB STAGE</a></li>
+                                <li><a href="#">빵카로드 IN SEOUL</a></li>
+                                <li><a href="#">체험 프로그램</a></li>
+                            </ul> -->
+                        </li>
+                        <li>
+                            <a href="sub04.html">갤러리</a>
+                            <!-- <ul class="menu_bar">
+                                <li><a href="#">SMUF 2023</a></li>
+                                <li><a href="#">SMUF 2022</a></li>
+                                <li><a href="#">SMUF 2019</a></li>
+                            </ul> -->
+                        </li> 
+                    </ul>
+                </nav>
+
+                <!--모바일 gnb 토글버튼메뉴-->
+                <span class="menu-toggle-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+
+                <div id="toggle_full">
+                    <ul>
+                        <li><a href="sub01.html">SMUF 소개</a></li>
+                        <li><a href="sub02.html">라인업</a></li>
+                        <li><a href="sub03.html">프로그램</a></li>
+                        <li><a href="sub04.html">갤러리</a></li>
+                    </ul>
+                </div>
+            </header><!--//header-->
+        </div><!--헤더 100% 너비에 배경색 추가하기-->      
+        
+        <div id="visual_sub03">
+            <div class="visual_titlewrap03">
+                <h1 data-aos="fade-up" data-aos-duration="1000">프로그램</h1>
+                <div class="visual_subtitle03">
+                    <div><img src="./img/sub3_images/mainstage_text.png" alt="main_stage" data-aos="fade-up" data-aos-duration="1300"></div>
+                    <p data-aos="fade-up" data-aos-duration="1400">메인스테이지</p>
+                </div>
+            </div>
+        </div><!--//slider-->
+            
+        
+        
+        
+        <!--서브페이지에 들어갈 콘텐츠(내용)의 영역-->
+        <div id="contents_subarea03">
+
+            <div class="story_con">
+                <div class="intro_top2" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="sub_nav">
+                        <ul>
+                            <li>메인공연</li>
+                            <li>SMUF Talk</li>
+                            <li>K-POP 커버댄스 페스티벌</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="intro">
+                    <div class="intro_content">
+
+                        <!-- 윗부분 -->
+                        <div class="sub03_top_wrap" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="sub03_top">
+                                <img src="./img/sub3_images/mainst_img.png" alt="메인드럼">
+                                <div class="sub03_top_text">
+                                    <h2>
+                                        모두가 함께 즐길 수 있는<br>
+                                        다양한 장르의 서울뮤직페스티벌 메인 공연
+                                    </h2>
+                                    <div>일시 : 2023년 9월 22일(금) ~ 24일(일) 19:00 / 장소 : 노들섬 잔디마당</div>
+                                </div>
+                                <p>※ 해당 공연은 티켓 소지자에 한하여 현장 관람이 가능합니다.</p>
+                            </div>
+                        </div>
+
+                        <!-- 날짜 -->
+                        <div class="main_st_tit">
+                            <span>9/22(금) Energetic Stage LINE UP</span>
+                        </div>
+
+                        <!-- 내용 -->
+                        <div class="intro1">
+
+                            <div class="sub02_lineup_wrap" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="sub02_image">
+                                    <img src="./img/sub2_images/mainstage_fri05.png" alt="정인">
+                                </div>
+                                <div class="sub02_image_title">
+                                    <h2>정인</h2>
+                                    <div>Jung in</div>
+                                </div>
+                            </div>
+
+                            <div class="sub02_lineup_wrap" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="sub02_image">
+                                    <img src="./img/sub2_images/mainstage_fri03.png" alt="넉살,까데호">
+                                </div>
+                                <div class="sub02_image_title">
+                                    <h2>넉살 X 까데호</h2>
+                                    <div>Nucksal X CADEJO</div>
+                                </div>
+                            </div>
+
+                            <div class="sub02_lineup_wrap" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="sub02_image">
+                                    <img src="./img/sub2_images/mainstage_fri01.png" alt="가호,케이브">
+                                </div>
+                                <div class="sub02_image_title">
+                                    <h2>가호 X 케이브</h2>
+                                    <div>GAHO X KAVE</div>
+                                </div>
+                            </div>
+
+                            <div class="sub02_lineup_wrap" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="sub02_image">
+                                    <img src="./img/sub2_images/mainstage_fri02.png" alt="너드커넥션">
+                                </div>
+                                <div class="sub02_image_title">
+                                    <h2>너드커넥션</h2>
+                                    <div>Nerd Connection</div>
+                                </div>
+                            </div>
+
+                            <div class="sub02_lineup_wrap" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="sub02_image">
+                                    <img src="./img/sub2_images/mainstage_fri04.png" alt="원슈타인">
+                                </div>
+                                <div class="sub02_image_title">
+                                    <h2>원슈타인</h2>
+                                    <div>Wonstein</div>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <!-- 날짜 -->
+                        <div class="main_st_tit">
+                            <span class="sat">9/23(토) Attractive Stage LINE UP</span>
+                        </div>
+
+                        <!-- 내용 -->
+                        <div class="intro1">
+
+                            <div class="sub02_lineup_wrap" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="sub02_image">
+                                    <img src="./img/sub2_images/mainstage_sat03.png" alt="이민우">
+                                </div>
+                                <div class="sub02_image_title">
+                                    <h2>이민우(M)</h2>
+                                    <div>Lee Min Woo(M)</div>
+                                </div>
+                            </div>
+
+                            <div class="sub02_lineup_wrap" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="sub02_image">
+                                    <img src="./img/sub2_images/mainstage_sat05.png" alt="틴탑">
+                                </div>
+                                <div class="sub02_image_title">
+                                    <h2>틴탑</h2>
+                                    <div>TEEN TOP</div>
+                                </div>
+                            </div>
+
+                            <div class="sub02_lineup_wrap" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="sub02_image">
+                                    <img src="./img/sub2_images/mainstage_sat01.png" alt="BAE173">
+                                </div>
+                                <div class="sub02_image_title">
+                                    <h2>BAE173</h2>
+                                </div>
+                            </div>
+
+                            <div class="sub02_lineup_wrap" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="sub02_image">
+                                    <img src="./img/sub2_images/mainstage_sat02.png" alt="TAN">
+                                </div>
+                                <div class="sub02_image_title">
+                                    <h2>TAN</h2>
+                                </div>
+                            </div>
+
+                            <div class="sub02_lineup_wrap" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="sub02_image">
+                                    <img src="./img/sub2_images/mainstage_sat04.png" alt="클라씨">
+                                </div>
+                                <div class="sub02_image_title">
+                                    <h2>클라씨</h2>
+                                    <div>CLASS:y</div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- 날짜 -->
+                        <div class="main_st_tit">
+                            <span class="sun">9/24(일) Together Stage LINE UP</span>
+                        </div>
+
+                        <!-- 내용 -->
+                        <div class="intro1">
+
+                            <div class="sub02_lineup_wrap" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="sub02_image">
+                                    <img src="./img/sub2_images/mainstage_sun04.png" alt="코요태">
+                                </div>
+                                <div class="sub02_image_title">
+                                    <h2>코요태</h2>
+                                    <div>Koyote</div>
+                                </div>
+                            </div>
+
+                            <div class="sub02_lineup_wrap" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="sub02_image">
+                                    <img src="./img/sub2_images/mainstage_sun03.png" alt="알리">
+                                </div>
+                                <div class="sub02_image_title">
+                                    <h2>알리</h2>
+                                    <div>ALi</div>
+                                </div>
+                            </div>
+
+                            <div class="sub02_lineup_wrap" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="sub02_image">
+                                    <img src="./img/sub2_images/mainstage_sun02.png" alt="송가인">
+                                </div>
+                                <div class="sub02_image_title">
+                                    <h2>송가인</h2>
+                                    <div>Song Ga In</div>
+                                </div>
+                            </div>
+
+                            <div class="sub02_lineup_wrap" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="sub02_image">
+                                    <img src="./img/sub2_images/mainstage_sun05.png" alt="폴킴">
+                                </div>
+                                <div class="sub02_image_title">
+                                    <h2>폴킴</h2>
+                                    <div>Paul Kim</div>
+                                </div>
+                            </div>
+
+                            <div class="sub02_lineup_wrap" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="sub02_image">
+                                    <img src="./img/sub2_images/mainstage_sun01.png" alt="경서">
+                                </div>
+                                <div class="sub02_image_title">
+                                    <h2>경서</h2>
+                                    <div>Kyoung Seo</div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+        
+
+
+                    <!-- smuf talk -->
+                    <div class="intro_content">
+
+                        <!-- 윗부분 -->
+                        <div class="sub03_top_wrap" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="sub03_top">
+                                <img src="./img/sub3_images/prog_smf_img.png" alt="메인드럼">
+                                <div class="sub03_top_text">
+                                    <h2>&lt;K-컬처를 이야기하다&gt;<br>
+                                        K-POP, K-댄스, K-드라마 OST를 대표하는 분야별 전문가들의 솔직, 담백 토크 콘서트
+                                    </h2>
+                                    <div>일시 : 2023년 9월 22일(금) 18:00 / 장소 : 노들섬 잔디마당</div>
+                                </div>
+                                <p>※ 해당 공연은 티켓 소지자에 한하여 현장 관람이 가능합니다.</p>
+                            </div>
+                        </div>
+
+                        <!-- 내용 -->
+                        <div class="intro2">
+
+                            <div class="talk_4con_wrap">
+                                <div class="talk_4con" data-aos="fade-up" data-aos-duration="1000">
+                                    <div class="talk_img">
+                                        <img src="./img/sub3_images/smf_talk_1.png" alt="">
+                                    </div>
+                                    <div class="talk_text">
+                                        <div><h2>MC. 서지음</h2></div>
+                                        <p>
+                                            작사가 겸 가수, <br>
+                                            SM엔터테인먼트 가수들의 노래 작사에 주로 참여 <br>
+                                            최근 &lt;아이브-LOVE DIVE, After Like&gt;등 작사에 참여하여 히트곡 작사가로 자리매김
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="talk_4con_wrap">
+                                <div class="talk_4con" data-aos="fade-up" data-aos-duration="1000">
+                                    <div class="talk_img">
+                                        <img src="./img/sub3_images/smf_talk_2.png" alt="">
+                                    </div>
+                                    <div class="talk_text">
+                                        <div><h2>아이키</h2></div>
+                                        <p> 
+                                            댄스 크루 HOOK의 리더로, 2021년 Mnet 춤 서바이벌 &lt;스트릿 우먼 파이터&gt;에 출연 <br>
+                                            숏폼 TikTok을 통해 짧지만 강렬한 댄스 영상들을 선보이며 대중들의 이목을 집중시켰으며, <br>
+                                            현재 댄서, 안무가, 방송인 등 다방면으로 활동하는 만능엔터테이너
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="talk_4con_wrap">
+                                <div class="talk_4con" data-aos="fade-up" data-aos-duration="1000">
+                                    <div class="talk_img">
+                                        <img src="./img/sub3_images/smf_talk_3.png" alt="">
+                                    </div>
+                                    <div class="talk_text">
+                                        <div><h2>리즈 <em>LEEZ</em></h2></div>
+                                        <p>
+                                            하이헷 주식회사 소속 작곡가 겸 프로듀서로 보이그룹&lt;에이티즈&gt;와 걸그룹&lt;드림캐쳐&gt;의 전속 작곡가로 활동
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="talk_4con_wrap">
+                                <div class="talk_4con" data-aos="fade-up" data-aos-duration="1000">
+                                    <div class="talk_img">
+                                        <img src="./img/sub3_images/smf_talk_4.png" alt="">
+                                    </div>
+                                    <div class="talk_text">
+                                        <div><h2>가호 <em>GAHO</em></h2></div>
+                                        <p>
+                                            &lt;이태원 클라쓰-시작&gt;, &lt;비밀의 숲2-바람&gt; 등 K-드라마 OST의 신흥강자로 떠오르고 있는 가수
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+        
+
+
+                    <!-- k-pop -->
+                    <div class="intro_content">
+
+                        <!-- 내용 -->
+                        <div class="intro3">
+
+                            <div class="talk_4con_wrap" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="talk_4con">
+                                    <div class="talk_img">
+                                        <img src="./img/sub3_images/program_kpop_cover01.png" alt="">
+                                    </div>
+                                    <div class="talk_text">
+                                        <div class="sub03_03_wrap">
+                                            <h2 class="sub03_03">K-POP 커버댄스 페스티벌 월드 파이널</h2>
+                                        </div>
+                                        <p class="sub03_03_text1">
+                                            전 세계 K-POP 커버댄스 페스티벌 각국 대표팀들 중 최종 우승 팀을 가리는 파이널 무대
+                                        </p>
+                                        <span class="sub03_03_text2">일시 : 2023년 9월 23일(토) 17:00 / 장소 : 노들섬 잔디마당</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="talk_4con_wrap" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="talk_4con">
+                                    <div class="talk_img">
+                                        <img src="./img/sub3_images/program_kpop_cover02.png" alt="">
+                                    </div>
+                                    <div class="talk_text">
+                                        <div class="sub03_03_wrap">
+                                            <h2 class="sub03_03">K-POP 커버댄스 페스티벌 갈라쇼</h2>
+                                        </div>
+                                        <p class="sub03_03_text1">
+                                            100명 이상의 전 세계 K-POP 커버댄스 페스티벌 각국 대표팀들이 펼치는 갈라쇼로 세계적으로 큰 사랑을 받는 케이팝(K-POP) 곡들을 선정하여 K-POP 아이돌 가수들의 글로벌 히트곡에 맞춰 커버댄스 갈라쇼 공연
+                                        </p>
+                                        <span class="sub03_03_text2">일시 : 2023년 9월 24일(일) 18:00 / 장소 : 노들섬 잔디마당</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+
+        <div id="container">
+                
+        <!-- 내가 디자인한 콘텐츠를 넣는 공간 시작-->    
+        
+        
+        
+        
+        
+        
+        <!-- 내가 디자인한 콘텐츠를 넣는 공간 끝--> 
+        
+        </div><!--//container-->
+        </div><!--//contents_subarea-->
+        
+        
+        
+        
+    <footer id="footer">
+        <div class="footer_wrap">
+            <div class="footer_1">
+                <div>
+                    <a href="#"><img src="./img/main_images/logo_w.svg" alt="로고"></a>
+                </div>
+                <div>
+                    <div>E-mail</div>
+                    <p>SEOULMUSICFESTIVAL@GMAIL.COM</p>
+                </div>
+            </div>
+
+            <div class="footer_2">
+                <div>
+                    <img src="./img/main_images/seoul.png" alt="서울특별시로고">
+                </div>
+                <div>
+                    <a href="#"><img src="./img/main_images/fb.png" alt="페이스북"></a>
+                    <a href="#"><img src="./img/main_images/instar.png" alt="인스타"></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer_3">
+            <p class="copyright">Copyright 2024 신구대학교  미디어콘텐츠과 A반 2021122022 박정아 </p>
+            <p class="copyright">ⓒ adidas Korea, LLC. All Rights Reserved</p>
+        </div>
+
+    </footer><!--//footer-->
+    </div><!--//wrap-->
+</body>
+</html>

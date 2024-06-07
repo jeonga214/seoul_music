@@ -1,0 +1,302 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"> <!--뷰포트설정-->
+<title>2023 SEOUL MUSIC FESTIVAL</title>
+
+
+<link rel="stylesheet" type="text/css" href="css/reset.css"> <!--문서초기화 css-->
+<link rel="stylesheet" type="text/css" href="css/style.css"> <!--디자인 css-->
+
+<link rel="icon" type="image/png" href="./img/favicon/faviconV2.png" />
+<link rel="apple-touch-icon-precomposed" href="img/favicon/indigo-touch-icon.png"> 
+<!--아이폰이,아이패드에서 웹페이지를 바탕 화면에 링크설정-->
+
+
+<script src="js/jquery-1.9.1.min.js"></script> <!--제이쿼리 라이브러리 링크-->
+
+<!--(1) 파일 링크-->
+<link rel="stylesheet" href="js/jquery.bxslider.css"> <!--bx슬라이더 CSS 연결-->
+<script src="js/jquery.bxslider.js"></script><!--제이쿼리 bx슬라이더 파일 연결-->
+<script src="js/header.js" defer></script>
+  
+<!-- AOS 라이브러리 불러오기-->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script> 
+
+<!--(3) 제이쿼리 입력-->  
+  <!-- <script>
+    $(document).ready(function(){
+      $('.slider').bxSlider({
+        auto: true,   //자동실행
+        speed : 2000,
+      });
+    });
+  </script> -->
+
+
+
+
+<!--제이쿼리로 모바일 버전에서 전체메뉴 아이콘 토글기능 설정 -->
+<!-- <script type="text/javascript">
+$(document).ready(function() {
+	$(".menu-toggle-btn").click(function(){
+		$(".gnb").stop().slideToggle("fast");
+	});
+});
+</script> -->
+
+</head>
+
+<body>
+    <script> 
+        AOS.init(); 
+    </script>
+
+    <div id="wrap">
+        <div id="header_wrap">
+            <header id="header">
+                <h1 class="logo">
+                    <a href="index.html">
+                        <picture>
+                            <source srcset="./img/main_images/logo_w.svg" media="(max-width:820px)">
+                            <source srcset="./img/main_images/logo_w.svg" media="(max-width:1024px)">
+                            <img src="./img/main_images/logo_w.svg" alt="서울뮤직페스티벌"/>
+                        </picture>
+                    </a>
+                </h1>
+                <nav>
+                    <ul class="gnb">
+                        <li>
+                            <a href="sub01.html">SMUF 소개</a>
+                            <!-- <ul class="menu_bar">
+                                <li><a href="#">행사개요</a></li>
+                                <li><a href="#">일정표</a></li>
+                                <li><a href="#">오시는 길</a></li>
+                            </ul> -->
+                        </li>
+                        <li>
+                            <a href="sub02.html">라인업</a>
+                            <!-- <ul class="menu_bar">
+                                <li><a href="#">MAIN STAGE</a></li>
+                                <li><a href="#">SUB STAGE</a></li>
+                                <li><a href="#">SMUF 버스킹</a></li>
+                                <li><a href="#">SING4U</a></li>
+                            </ul> -->
+                        </li>
+                        <li>
+                            <a href="sub03.html">프로그램</a>
+                            <!-- <ul class="menu_bar">
+                                <li><a href="#">MAIN STAGE</a></li>
+                                <li><a href="#">SUB STAGE</a></li>
+                                <li><a href="#">빵카로드 IN SEOUL</a></li>
+                                <li><a href="#">체험 프로그램</a></li>
+                            </ul> -->
+                        </li>
+                        <li>
+                            <a href="sub04.html">갤러리</a>
+                            <!-- <ul class="menu_bar">
+                                <li><a href="#">SMUF 2023</a></li>
+                                <li><a href="#">SMUF 2022</a></li>
+                                <li><a href="#">SMUF 2019</a></li>
+                            </ul> -->
+                        </li> 
+                    </ul>
+                </nav>
+
+                <!--모바일 gnb 토글버튼메뉴-->
+                <span class="menu-toggle-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+
+                <div id="toggle_full">
+                    <ul>
+                        <li><a href="sub01.html">SMUF 소개</a></li>
+                        <li><a href="sub02.html">라인업</a></li>
+                        <li><a href="sub03.html">프로그램</a></li>
+                        <li><a href="sub04.html">갤러리</a></li>
+                    </ul>
+                </div>
+            </header><!--//header-->
+        </div><!--헤더 100% 너비에 배경색 추가하기-->      
+        
+        <div id="visual_sub01">
+            <div class="visual_titlewrap01">
+                <h1 data-aos="fade-up" data-aos-duration="1000">SMUF 소개</h1>
+                <div class="visual_subtitle01">
+                    <div><img src="./img/sub1_images/sub01_text.png" alt="overview" data-aos="fade-up" data-aos-duration="1300"></div>
+                    <p data-aos="fade-up" data-aos-duration="1400">행사개요</p>
+                </div>
+            </div>
+        </div><!--//slider-->
+        
+        
+        <!--서브페이지에 들어갈 콘텐츠(내용)의 영역-->
+        <div id="contents_subarea01">
+            <div id="sub01_container"></div><!--//container-->
+            <div class="sub01_content1_wrap">
+                <div class="sub01_content1" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="sub01_content1_top">
+                        <img src="./img/sub1_images/smf_int-logo.png" alt="서브콘텐츠로고1">
+                        <span>2023 서울뮤직페스티벌</span>
+                    </div>
+                    <div class="sub01_content1_bottom">
+                        <div class="everything">대중음악의 모든 것</div>
+                        <div class="sub01_content1_text1">
+                            전 장르를 아우르는 대중음악을 통해 서울의 밤을 더 뜨겁게 달궈 시민과 함께<br>
+                            만드는 문화매력도시 서울을 보여줄 
+                            <b>2023 서울뮤직페스티벌</b></div>
+                        <div class="sub01_content1_text2">
+                            대중음악으로 하나되어 모두가 함께 즐기는 서울의 대표 문화예술축제로<br> 
+                            한걸음 더 다가갈 3일간의 여정에 여러분을 초대합니다.
+                        </div>
+                    </div>
+
+                    <!-- 음표 -->
+                    <div class="mscNt_left">
+                        <img src="./img/sub1_images/smf_int-vs1.png" alt="음표1">
+                    </div>
+                    <div class="mscNt_right">
+                        <img src="./img/sub1_images/smf_int-vs2.png" alt="음표2">
+                    </div>
+
+                </div>
+
+                <!-- 배경 -->
+                <div class="sub01_con1_img1">
+                    <img src="./img/sub1_images/smf_int-img1.png" alt="왼쪽사람들">
+                </div>
+
+                <div class="sub01_con1_img2">
+                    <img src="./img/sub1_images/smf_int-img2.png" alt="오른쪽사람들">
+                </div>
+                
+                <div class="sub01_con1_img3">
+                    <img src="./img/sub1_images/smf_int-img3.png" alt="왼쪽풀">
+                </div>
+
+                <div class="sub01_con1_img4">
+                    <img src="./img/sub1_images/smf_int-img4.png" alt="오른쪽풀">
+                </div>
+
+            </div>
+        </div><!--//contents_subarea-->
+
+        <div class="sub01wrapwrap">
+            <div class="sub01_content2_wrap" data-aos="fade-up" data-aos-duration="1000">
+                <div class="sub01_content2">
+                    <div class="sub01_content2_top">
+                        <div class="sub01_con2_txt">
+                            <div class="fes_txt_top2">
+                                축제정보
+                                <p>FESTIVAL</p>
+                                <img src="./img/sub1_images/s2Text.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sub01_content2_bottom">
+                        <div class="sub01__right_wrap">
+                            <div>
+                                <div class="con_con_left">
+                                    <span>행</span>
+                                    <span>사</span>
+                                    <span>명</span>
+                                </div>
+                                <div class="con_con_right">2023 서울뮤직페스티벌</div>
+                            </div>
+        
+                            <div>
+                                <div class="con_con_left">
+                                    <span>기</span>
+                                    <span>간</span>
+                                </div>
+                                <div class="con_con_right">2023. 9. 22.(금) ~ 9. 24.(일) / 3일간</div>
+                            </div>
+        
+                            <div>
+                                <div class="con_con_left">
+                                    <span>장</span>
+                                    <span>소</span>
+                                </div>
+                                <div class="con_con_right">노들섬 잔디마당, 노들스퀘어, 라이브하우스</div>
+                            </div>
+        
+                            <div>
+                                <div class="con_con_left">
+                                    <span>주</span>
+                                    <span>최</span>
+                                </div>
+                                <div class="con_con_right"><img src="./img/sub1_images/int-info-seoul.png" alt="서울로고"></div>
+                            </div>
+        
+                            <div>
+                                <div class="con_con_left">
+                                    <span>프</span>
+                                    <span>로</span>
+                                    <span>그</span>
+                                    <span>램</span>
+                                </div>
+                                <div class="con_con_right">메인스테이지, 서브스테이지, 체험 프로그램 등</div>
+                            </div>
+        
+                        </div>
+                    </div>
+                    
+                    <!--음표-->
+                    <div class="m-note1">
+                        <img src="./img/sub1_images/smf_int-vs2.png" alt="">
+                    </div>
+                    <div class="m-note2">
+                        <img src="./img/sub1_images/smf_int-vs3.png" alt="">
+                    </div>
+
+                </div>
+            </div>
+            <!--배경-->
+            <div class="sub01_con2_img1">
+                <img src="./img/sub1_images/int-info-img1.png" alt="춤추는사람">
+            </div>
+            <div class="sub01_con2_img2">
+                <img src="./img/sub1_images/smf_int-img3.png" alt="풀">
+            </div>
+        </div>
+        
+        
+    
+        <footer id="footer">
+            <div class="footer_wrap">
+                <div class="footer_1">
+                    <div>
+                        <a href="#"><img src="./img/main_images/logo_w.svg" alt="로고"></a>
+                    </div>
+                    <div>
+                        <div>E-mail</div>
+                        <p>SEOULMUSICFESTIVAL@GMAIL.COM</p>
+                    </div>
+                </div>
+
+                <div class="footer_2">
+                    <div>
+                        <img src="./img/main_images/seoul.png" alt="서울특별시로고">
+                    </div>
+                    <div>
+                        <a href="#"><img src="./img/main_images/fb.png" alt="페이스북"></a>
+                        <a href="#"><img src="./img/main_images/instar.png" alt="인스타"></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer_3">
+                <p class="copyright">Copyright 2024 신구대학교  미디어콘텐츠과 A반 2021122022 박정아 </p>
+                <p class="copyright">ⓒ adidas Korea, LLC. All Rights Reserved</p>
+            </div>
+
+        </footer><!--//footer-->
+    </div><!--//wrap-->
+
+</body>
+</html>
